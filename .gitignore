@@ -164,3 +164,6 @@ bionic-env/
 
 # test
 test/
+
+# Mac
+.DS_Store/
