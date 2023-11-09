@@ -167,3 +167,8 @@ test/
 
 # Mac
 .DS_Store
+
+# Project
+dist.zip
+generated-ee95640a4bae1743b8ca365cd59826f3bf6d1c653a518e2c0949ced7a5b59310.icns
+icon.png
