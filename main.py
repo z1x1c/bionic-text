@@ -1,4 +1,5 @@
 import fitz
+import flet as ft
 
 def extract_text(pdf_path):
     doc = fitz.open(pdf_path)
@@ -65,7 +66,7 @@ def make_bionic(text, font_size):
 
     return new_pdf
 
-def main():
+def bionic_pdf():
     pdf_path = './test/sample-text-3.pdf'
     extracted_text = extract_text(pdf_path)  # Use the new extract_text function
 
@@ -76,5 +77,8 @@ def main():
     new_pdf.save("./test/bionic-text.pdf")
     new_pdf.close()
 
+def main(page: ft.Page):
+    page.title = "Bionic Text Converter"
+
 if __name__ == "__main__":
-    main()
+    ft.app(target=main)
